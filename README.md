@@ -116,7 +116,7 @@ SmolLM2 by Hugging Face (Apache-2.0). The graph builder reads the original weigh
 
 ## Use it from Python
 
-There is now a pip-installable Python wrapper for the NPU, [cubie-npu](https://github.com/Aseel1206/cubie-npu) (not on PyPI yet, install it with `pip install git+https://github.com/Aseel1206/cubie-npu`). With it you can skip the C++ tools above:
+There is now a pip-installable Python wrapper for the NPU, [cubie-npu](https://github.com/Aseel1206/cubie-npu) (`pip install cubie-npu`, [on PyPI](https://pypi.org/project/cubie-npu/)). With it you can skip the C++ tools above:
 
 [`examples/chat.py` in cubie-npu](https://github.com/Aseel1206/cubie-npu/blob/main/examples/chat.py) is the same chat with the whole decode loop in Python (about 21-22 tokens/s, against 22.8 for the C++ engine here). It reads the fixed-point scales from the model, so it needs no `nbg_meta.json`.
 
